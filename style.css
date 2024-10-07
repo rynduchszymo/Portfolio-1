@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+     background-image: url(stacked-waves-haikei\ \(1\).svg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+body>.main-con{
+     margin:5% 10%;
+}
+.navbar {
+     display: flex;
+     justify-content: space-between; 
+     align-items: center;
+     padding: 20px; 
+ }
+.logo{
+     color: #F27BBD;
+     font-family: "Ubuntu";
+     font-size: 1.5rem;
+}
+
+.nav-text{
+     color: #F27BBD;
+     display: flex;
+     gap:60px;
+     align-items: center;
+     justify-content: center;
+     margin:40px;
+
+     
+}
+
+.nav-text button{
+     background: transparent;
+     font-family:"Ubuntu";
+     border:none;
+     font-size:20px;
+     color:blueviolet
+    
+}
+
+.nav-text button:hover{
+     background-color: #F27BBD;
+     transition: 0.3s;
+     box-shadow: 10px 10px 15px #874CCC;  
+     border-radius: 30px;
+     color:white;
+     width: 120px;
+     height: 30px;
+}
+.nav-text button:after{
+     background-color: #874CCC; /* Zmiana koloru podczas kliknięcia */
+     transform: translateY(2px); /* Przesunięcie w dół */
+     box-shadow: 5px 5px 10px blanchedalmond;
+}
+
+
+
+
+.nav-text ul{
+     list-style: none;
+     display: flex;
+     gap:50px;
+
+}
+
+.btn-join{
+     display: flex;
+     align-items: center;
+     justify-items: center;
+     margin-right: 80px;
+}
+.join1{
+background-color: blueviolet;
+border-radius: 30px;
+height: 45px;
+width: 180px;
+color:white;
+font-family: "Ubuntu";
+border:none;
+font-size: 20px;
+}
+
+
+.join1:hover{
+     background-color: #874CCC;
+     transition: 0.3s;
+     box-shadow: 10px 10px 15px #F27BBD; /* Przykład: cień z rozmyciem */
+}
+
+.join1:active {
+     background-color: #C65BCF; /* Zmiana koloru podczas kliknięcia */
+     transform: translateY(2px); /* Przesunięcie w dół */
+     box-shadow: 5px 5px 10px blanchedalmond; /* Mniejszy cień podczas kliknięcia */
+ }
+ .main-con{
+     background-color: #874CCC;
+     border-radius: 30px;
+     padding: 20px;
+
+ }
+ 
+ .main-text{
+     font-family: "Ubutntu";
+     font-size: 20px;
+ }
+
+
+ .main-con h1{
+ color:#F27BBD;
+ font-family: "Ubuntu";
+ }
+ .main-con p{
+     color:#FFFFFF;
+     font-family: "Ubuntu";
+     }
+
+ .avatar{
+     border-radius:30px;
+     border:solid black 1px;
+ }
+
+
+ @media (max-width: 1200px) {
+     .nav-text {
+         gap: 50px;
+     }
+ 
+     .nav-text button {
+         font-size: 20px;
+     }
+ }
