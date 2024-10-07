@@ -1,15 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/*--------------------------------------------------------------------------------------------------------------------*/
-
-/*Kod stylizujący sekcję body */
-body{
-     background-image: url(layered-waves-haikei\ \(3\).svg); 
-     background-repeat: no-repeat;
-     background-size: cover;
-     animation: rotate 6s infinite alternate linear
+*{
+     box-sizing: border-box;
 }
 
+
+/* html, body, .wrapper{
+     height: 100%;
+} */
+
+.register-card .wrapper{
+     height: 100%;
+}
+body{
+     display: grid;
+     place-items: center;
+     margin:0;
+     padding: 0 24px;
+     background-image: url(layered-waves-haikei\ \(3\).svg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     font-family: "Ubuntu";
+     color:#000000;
+     
+}
+
+.register-card{
+     position: relative;
+     z-index: 3;
+     width: 100%;
+     margin: 0 20px;
+     padding: 70px 30px 44px;
+     border-radius: 1.25rem;
+     background: #FFFFFF;
+     text-align: center;
+     
+}
+
+.register-card >h2{
+     font-size: 36px;
+     font-weight: 600;
+     margin: 0 0 12px;
+     
+}
+
+.register-card >h3{
+     color: rgba(0, 0, 0, 0.30);
+     margin: 0 0 30px;
+     font-weight:500 ;
+     font-size: 1rem;
+    
+}
+.register-form{
+     width: 100%;
+     margin: 0;
+     display: grid;
+     gap:16px;
+     
+}
+
+.register-form>input, .register-form>button{
+width: 100%;
+height: 50px;
+
+}
+
+.register-form>input{
+     border: 2px solid #ebebeb;
+     font-family: inherit;
+     font-size: 15px;
+     padding: 0 16px;
+     border-radius: 1.25rem;
+     transition: all 0.375s;
+     
+}
+
+
+
+.register-form>input:hover{
+     border:2px solid #10449A;  
+}
+
+.register-form > button{
+     cursor:pointer;
+     width: 100%;
+     padding: 0 16px;
+     border-radius: 1.25rem;
+     background-color: #10449A;
+     color:#FFFFFF;
+     border:none;
+     font-family: inherit;
+     font-size: 1rem;
+     font-weight: 600;
+     letter-spacing: 2px;
+     transition: all 0.375s;
+}
+
+.register-form>button:hover{
+     background: #10499A;
+}
+
+.register-form>a{
+     color:#216ce7;
+     font-size: 0.9rem;
+     text-align: left;
+     text-decoration: none;
+     margin-bottom: 6px;
+     transition: all 0.375s;
+}
+@keyframes rotate{
+     100%{
+          background-position: 15% 70%;
+     }
+}
+
+@media(width >= 500px){
+     body{
+          padding: 0;
+     }
+
+     .register-card{
+          margin:0;
+          width:400px;
+
+     }
+}
+
+/*-----------------------------------------------------------------------------------------*/
 /*Kod stylizujący element logo*/
 .logo{
      color: #F27BBD;
@@ -46,6 +163,7 @@ body{
      display: flex;
      justify-content: center;
      align-items: center;
+     
  }
 
  /* kod stylizujący przyciski w navabrze po najechaniu na nie */
@@ -101,57 +219,6 @@ body{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     margin-right: 5%;
-     margin-left: 5%;
+     margin-bottom: 20%;
+
 }
-
-/*Kod na stylizowanie głównego div z kontentem */
-body>.main-con{
-     margin:5% 10%;
-}
-
-/*Kod stylizujący paragrafy w divach z kontentem*/
-.main-text{
-     font-family: "Ubutntu";
-     font-size: 20px;
-     color:white;
-     font-family: "Ubuntu";
-     animation: fadeIn 1s ease-in-out;
- }
-
- /*Kod stylizujący divy w których zawarty jest kontent*/
- .main-con{
-     background-color: #874CCC;
-     border-radius: 30px;
-     padding: 20px;
- }
-
- /*Stylizacja nagłówków w divach z kontentem*/
- .main-con h1{
-     color:#F27BBD;
-     font-family: "Ubuntu";
-     animation: fadeIn 1s ease-in-out;
-}
-/* kod na dostosowanie strony do witryn w róznej rozdzielczości */
-@media (max-width: 1200px) {
-    .nav-text {
-        gap: 50px;
-    }
-
-    .nav-text button {
-        font-size: 20px;
-    }
-}
-/* Animacja na nagłówki */
-@keyframes fadeIn {
-     from {
-         opacity: 0;
-         transform: translateY(20px);
-     }
-     to {
-         opacity: 1;
-         transform: translateY(0);
-     }
- }
-
- 
