@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/*--------------------------------------------------------------------------------------------------------------------*/
-
-/*Kod stylizujący sekcję body */
+/*Kod stylizujący sekcje navbar*/
 body{
-     background-image: url(layered-waves-haikei\ \(3\).svg); 
+     background-image: url(layered-waves-haikei\ \(3\).svg);
      background-repeat: no-repeat;
      background-size: cover;
      animation: rotate 6s infinite alternate linear;
@@ -105,44 +103,86 @@ body{
      margin-left: 5%;
 }
 
-/*Kod na stylizowanie głównego div z kontentem */
-body>.main-con{
-     margin:5% 10%;
-}
-
-/*Kod stylizujący paragrafy w divach z kontentem*/
-.main-text{
-     font-family: "Ubutntu";
-     font-size: 20px;
-     color:white;
-     font-family: "Ubuntu";
-     animation: fadeIn 1s ease-in-out;
- }
-
- /*Kod stylizujący divy w których zawarty jest kontent*/
- .main-con{
+/*kod na stylizacje div pojemnik 1*/
+/* Stylizacja dla głównego kontenera */
+.content1 {
      background-color: #874CCC;
+     border: 2px solid black;
      border-radius: 30px;
-     padding: 20px;
+     width: 30%; /* Ustaw szerokość na 30%, aby zmieściły się 3 elementy w jednym rzędzie */
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+     gap: 10px;
+     box-sizing: border-box;
+     width: 25%;
+     margin-bottom: 3%;
  }
-
- /*Stylizacja nagłówków w divach z kontentem*/
- .main-con h1{
-     color:#F27BBD;
+ 
+ /* Stylizacja dla obrazka */
+ .content1-img img {
+    width: 100%;         /* Zmniejsza szerokość obrazka (np. do 80% kontenera) */
+    height: auto;       /* Zachowuje proporcje */
+    display: block;     /* Zmienia sposób wyświetlania na block, aby można było zastosować marginesy */
+    margin: 0 auto;     /* Wyśrodkowanie obrazka */
+    border: 1px solid black; /* Dodanie obramowania obrazka */
+    border-radius: 30px;
+    animation: fadeIn 1s ease-in-out;
+ }
+ 
+ /* Stylizacja dla nagłówka */
+ .content1-text h3 {
+     margin-left: 15px;      /* Usuń marginesy */
+     padding: 5px 0;  /* Dodaj odstępy */
+     text-align: left;  /* Wyśrodkuj tekst */
+     color: white;
+     font-weight:500;
      font-family: "Ubuntu";
      animation: fadeIn 1s ease-in-out;
-}
-/* kod na dostosowanie strony do witryn w róznej rozdzielczości */
-@media (max-width: 1200px) {
-    .nav-text {
-        gap: 50px;
-    }
-
-    .nav-text button {
-        font-size: 20px;
-    }
-}
-/* Animacja na nagłówki */
+    
+    
+ }
+ 
+ /* Stylizacja dla krótkiego tekstu */
+ .content1-text p {
+     margin: 0;
+     padding: 10px 0;
+     text-align: left;  
+     margin-left: 15px;
+     color: white;
+     font-family: "Ubuntu";
+     animation: fadeIn 1s ease-in-out;
+ }
+ 
+ /* Stylizacja dla linka "czytaj więcej" */
+ .read-more {
+     
+     padding-top: 5px;
+     text-align: right;           /* Wyrównanie do prawej */
+     margin-right: 7%;
+ }
+ 
+ .read-more a {
+     text-decoration: none;  /* Usuń podkreślenie */
+     color:white;            /* Kolor linku */
+     text-decoration: none;
+     font-family: "Ubuntu";
+     animation: fadeIn 1s ease-in-out;
+ }
+ 
+ .read-more a:hover {
+    color:#F27BBD;
+ }
+ #pojemnik1{
+     display: flex;
+     flex-wrap: wrap; /* Pozwala elementom owijać się do kolejnego wiersza */
+     justify-content: space-between; /* Rozstawia elementy równomiernie */
+     gap: 20px; /* Odstępy między elementami */
+     padding: 20px; /* Dodaj odstępy wewnątrz pojemnika */
+     margin: 5% 4% 5% 4%;
+ }
+ /* Animacja na nagłówki */
 @keyframes fadeIn {
      from {
          opacity: 0;
@@ -153,5 +193,3 @@ body>.main-con{
          transform: translateY(0);
      }
  }
-
- 
