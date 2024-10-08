@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*Kod stylizujący sekcję body */
+body{
+     background-image: url(layered-waves-haikei\ \(3\).svg); 
+     background-repeat: no-repeat;
+     background-size: cover;
+     animation: rotate 6s infinite alternate linear;
+}
+
+/*Kod stylizujący element logo*/
+.logo{
+     color: #F27BBD;
+     font-family: "Ubuntu";
+     font-size: 1.5rem;
+}
+/*kod stylizujący link dopięty do logo strony*/
+.logo-link{
+     text-decoration: none; /* Usuwa podkreślenie */
+    outline: none; /* Usuwa domyślny obrys (niebieski) */
+    color: inherit; /* Używa koloru z rodzica (czyli z .logo) */
+}
+
+/*Kod stylizujacy divy przycisków głównych */
+.nav-text{
+     color: #F27BBD;
+     display: flex;
+     gap:60px;
+     align-items: center;
+     justify-content: center;
+     margin:40px;  
+}
+
+/* kod stylizujący przyciski głowne : Home, Blog, About, Contact*/
+ .nav-btn{
+     color:white;
+     text-decoration: none;
+     font-size: 25px;
+     font-family: "Ubuntu";
+     height: 50px;
+     width:130px;
+     background-color: #874CCC;
+     border-radius: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* kod stylizujący przyciski w navabrze po najechaniu na nie */
+ .nav-btn:hover{
+     background-color: #F27BBD;
+     transition: 0.3s;
+     box-shadow: 10px 10px 15px #874CCC;  
+     border-radius: 30px;
+     color:white;
+ }
+
+ /* kod stylizujący przyciski w czasie kliknięcia na nie*/
+.nav-btn:active{
+     background-color: #874CCC; 
+     transform: translateY(2px); 
+     box-shadow: 5px 5px 10px blanchedalmond;
+}
+
+ /* kod stylizujący przycisk JOIN US */
+ .register-link{
+     background-color: #F27BBD;
+     border-radius: 30px;
+     height: 50px;
+     width: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     font-family: "Ubuntu";
+     color:white;
+     font-size: 20px;
+ }
+
+
+ /* kod stylizujący przycisk JOIN US po najechaniu na niego */
+ .register-link:hover{
+     background-color: #F27BBD;
+     transition: 0.3s;
+     box-shadow: 10px 10px 15px #874CCC;  
+     border-radius: 30px;
+     color:white;
+ }
+
+/* kod stylizujący przycisk JOIN US w czasie kliknięcia na niego*/
+.register-link:active{
+     background-color: #874CCC; 
+     transform: translateY(2px); 
+     box-shadow: 5px 5px 10px blanchedalmond;
+}
+
+ /*kod stylizujący diva navbara */
+.navbar{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-right: 5%;
+     margin-left: 5%;
+}
+
+/* kod na dostosowanie strony do witryn w róznej rozdzielczości */
+@media (max-width: 1200px) {
+     .nav-text {
+         gap: 50px;
+     }
+ 
+     .nav-text button {
+         font-size: 20px;
+     }
+ }
